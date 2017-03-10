@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="杜文全背景.png" translatesAutoresizingMaskIntoConstraints="NO" id="RFn-oy-Z9w">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EO-fq-b52">
+                    <rect key="frame" x="164" y="456" width="46" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.28675570830000002" blue="0.17443012050000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Dtr-Sb-Lkr"/>
+                    </constraints>
+                    <state key="normal" title="评价"/>
+                    <connections>
+                        <action selector="commit:" destination="-1" eventType="touchUpInside" id="cuk-Lz-SAb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="RFn-oy-Z9w" secondAttribute="bottom" id="68z-x1-BhN"/>
+                <constraint firstItem="RFn-oy-Z9w" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AHR-rc-027"/>
+                <constraint firstAttribute="trailing" secondItem="0EO-fq-b52" secondAttribute="trailing" constant="165" id="AYb-2P-4mB"/>
+                <constraint firstAttribute="bottom" secondItem="0EO-fq-b52" secondAttribute="bottom" constant="181" id="JOb-UF-7UC"/>
+                <constraint firstAttribute="trailing" secondItem="RFn-oy-Z9w" secondAttribute="trailing" id="OiG-VV-FOo"/>
+                <constraint firstItem="0EO-fq-b52" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="164" id="lE8-sT-q3G"/>
+                <constraint firstItem="RFn-oy-Z9w" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tIy-Tf-gWM"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="杜文全背景.png" width="640" height="1136"/>
+    </resources>
+</document>
